@@ -1,27 +1,24 @@
 function calculateTax(amount) {
-    return amount * 0.10;
+    return amount * 0.1;
 }
 
 function convertToUpperCase(text) {
     return text.toUpperCase();
 }
 
-function findMaximum(num1, num2) {
-    return Math.max(num1, num2);
+function findMaximum(firstNumber, secondNumber) {
+    return Math.max(firstNumber, secondNumber);
 }
 
 function isPalindrome(word) {
-    const cleanedWord = word.toLowerCase();
-    const reversedWord = cleanedWord.split('').reverse().join('');
-    return cleanedWord === reversedWord;
+    const normalizedWord = word.toLowerCase();
+    const reversedWord = normalizedWord.split('').reverse().join('');
+    return normalizedWord === reversedWord;
 }
 
 function calculateDiscountedPrice(originalPrice, discountPercentage) {
-
     const discountAmount = originalPrice * (discountPercentage / 100);
-
     return originalPrice - discountAmount;
-
 }
 
 module.exports = {
